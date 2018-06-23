@@ -20,7 +20,7 @@ cd
 wget https://raw.githubusercontent.com/telostia/vetani2-guides/master/wallet/linux/platopay.tar.gz
 tar -xvf platopay.tar.gz
 chmod +x platopay*
-cp vetani* /usr/local/bin
+cp platopay* /usr/local/bin
 ufw allow 16029/tcp
 
 

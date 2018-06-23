@@ -10,7 +10,7 @@ Download windows wallet from these locations:
 for 32bit: 
 #[Windows32Bit wallet](https://github.com/telostia/Platopay-guides/raw/master/wallet/windows/wallet.zip)
 
-Unzip to any location of your choice and run it. If you cannot get it to sync. got to windows start and type:
+Unzip to any location of your choice and run platopay-qt.exe. If you cannot get it to sync. got to windows start and type:
 %appdata% 
 you should see "roaming" click on it. it will take you to a folder.
 
