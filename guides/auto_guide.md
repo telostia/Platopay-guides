@@ -8,14 +8,14 @@ Windows wallet setup
 
 Download windows wallet from these locations:
 for 32bit: 
+#[Windows32Bit wallet](https://github.com/telostia/Platopay-guides/raw/master/wallet/windows/wallet.zip)
 
-
-run it. if you cannot get it to sync. got to windows start and type:
+Unzip to any location of your choice and run it. If you cannot get it to sync. got to windows start and type:
 %appdata% 
 you should see "roaming" click on it. it will take you to a folder.
 
 find the "platopaycore" folder and double click on it.
-right click on "vetani.conf" and open it with notepad or any text editor.
+right click on "platopay.conf" and open it with notepad or any text editor.
 When file is loaded, add more nodes by copy and paste this:
 
 * addnode=185.174.101.66:16029

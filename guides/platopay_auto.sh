@@ -21,7 +21,7 @@ wget https://raw.githubusercontent.com/telostia/vetani2-guides/master/wallet/lin
 tar -xvf platopay.tar.gz
 chmod +x platopay*
 cp vetani* /usr/local/bin
-
+ufw allow 16029/tcp
 
 
 #masternode input
