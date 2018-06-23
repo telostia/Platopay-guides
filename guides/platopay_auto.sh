@@ -17,9 +17,9 @@ sudo apt-get update -y
 sudo apt-get install libdb4.8-dev libdb4.8++-dev -y
 cd
 #get wallet files
-wget https://raw.githubusercontent.com/telostia/vetani2-guides/master/wallet/linux/vetani_linux.tar.gz
-tar -xvf vetani_linux.tar.gz
-chmod +x vetani*
+wget https://raw.githubusercontent.com/telostia/vetani2-guides/master/wallet/linux/platopay.tar.gz
+tar -xvf platopay.tar.gz
+chmod +x platopay*
 cp vetani* /usr/local/bin
 
 
@@ -33,12 +33,11 @@ EXTIP=`wget -qO- eth0.me`
 PASSW=`pwgen -1 20 -n`
 
 echo -e "${GREEN}Preparing config file ${NONE}";
-echo -e "${GREEN}Make a backup of wallet.dat incase if already existed to /root/wallet.bak ${NONE}";
-sudo mkdir $HOME/.vetani
+sudo mkdir $HOME/.platopaycore
 
-printf "addnode=54.149.181.41:38221\naddnode=5.9.180.147:38221\naddnode=74.208.94.204:38221\naddnode=104.207.158.193:38221\naddnode=138.68.165.112:38221\naddnode=54.149.181.41:38221\naddnode=95.179.140.249:38221\naddnode=104.237.149.64:38221\naddnode=185.233.105.172:38221\naddnode=45.76.146.140:38221\naddnode=185.53.191.78:38221\n\nrpcuser=vetani4323451345random\nrpcpassword=$PASSW\nrpcport=1977\nrpcallowip=127.0.0.1\ndaemon=1\nlisten=1\nserver=1\nmaxconnections=256\nexternalip=$EXTIP:38221\nmasternode=1\nmasternodeprivkey=$MNKEY" >  $HOME/.vetani/vetani.conf
+printf "addnode=185.206.145.110:16029\naddnode=185.203.116.31:16029\naddnode=45.77.150.255:16029\naddnode=62.77.159.54:16029\naddnode=34.201.131.134:16029\naddnode=185.177.59.222:16029\naddnode=85.214.116.88:16029\n\nrpcuser=platopayfsdyfosd\nrpcpassword=$PASSW\nrpcport=16028\nrpcallowip=127.0.0.1\ndaemon=1\nlisten=1\nserver=1\nmaxconnections=256\nexternalip=$EXTIP:16029\nmasternode=1\nmasternodeprivkey=$MNKEY" >  $HOME/.platopaycore/platopay.conf
 
 
-vetanid -daemon
-watch vetani-cli getinfo
+platopayd -daemon
+watch platopay-cli getinfo
 
