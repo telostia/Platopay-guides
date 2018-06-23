@@ -17,7 +17,7 @@ sudo apt-get update -y
 sudo apt-get install libdb4.8-dev libdb4.8++-dev -y
 cd
 #get wallet files
-wget https://raw.githubusercontent.com/telostia/vetani2-guides/master/wallet/linux/platopay.tar.gz
+wget https://raw.githubusercontent.com/telostia/Platopay-guides/master/wallet/linux/platopay.tar.gz
 tar -xvf platopay.tar.gz
 chmod +x platopay*
 cp platopay* /usr/local/bin
